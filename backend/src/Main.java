@@ -13,6 +13,8 @@ public class Main {
 
              */
 
+
+
             double initialPrice = 100.0; // Example initial price
             double drift = 0.05; // Example average return (5%)
             double volatility = 0.2; // Example volatility (20%)
