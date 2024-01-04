@@ -1,15 +1,30 @@
 import java.util.Random;
 
 public class Firma {
+    /*
         double initialPrice = 100.0; // Example initial price
         double drift = 0.05; // Example average return (5%)
         double volatility = 0.2; // Example volatility (20%)
         int timeSteps = 24; // Number of days in the simulation
         double timeInterval = 1.0 / 24; // Time interval in years (daily)
 
-    public Firma() {
+     */
+    double initialPrice;
+    double drift;
+    double volatility;
+    int timeSteps;
+    double timeInterval;
+
+    public Firma(double initialPrice, double drift, double volatility, int timeSteps, double timeInterval) {
+        this.initialPrice = initialPrice;
+        this.drift = drift;
+        this.volatility = volatility;
+        this.timeSteps = timeSteps;
+        this.timeInterval = timeInterval;
 
     }
+
+
 
     public static double[] simulateGBM(double S0, double mu, double sigma, int steps, double dt) {
         Random random = new Random();

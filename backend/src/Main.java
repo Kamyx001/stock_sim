@@ -18,7 +18,7 @@ public class Main {
             double volatility = 0.2; // Example volatility (20%)
             int timeSteps = 24; // Number of days in the simulation
             double timeInterval = 1.0 / 24; // Time interval in years (daily)
-            Firma firma=new Firma();
+            Firma firma=new Firma(initialPrice, drift, volatility, timeSteps, timeInterval);
             double[] prices = new double[timeSteps];
             prices=firma.simulateGBM(initialPrice, drift, volatility, timeSteps, timeInterval);
 
