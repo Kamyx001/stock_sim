@@ -7,8 +7,9 @@ public class Firma {
         double volatility = 0.2; // Example volatility (20%)
         int timeSteps = 24; // Number of days in the simulation
         double timeInterval = 1.0 / 24; // Time interval in years (daily)
+    */
 
-     */
+
     double initialPrice;
     double drift;
     double volatility;
